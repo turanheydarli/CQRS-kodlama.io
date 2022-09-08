@@ -4,6 +4,7 @@ using Devs.Application.Features.Technologies.Models;
 using Devs.Application.Services.Repositories;
 using Devs.Domain.Entities;
 using MediatR;
+using Microsoft.EntityFrameworkCore;
 
 namespace Devs.Application.Features.Technologies.Queries.GetListTechnology;
 
@@ -21,6 +22,7 @@ public class GetListTechnologyQueryHandler : IRequestHandler<GetListTechnologyQu
     public async Task<TechnologyListModel> Handle(GetListTechnologyQuery request, CancellationToken cancellationToken)
     {
         IPaginate<Technology> technologies = await _technologyRepository.GetListAsync(
+            include: t => t.Include(p => p.Language),
             index: request.PageRequest.Page,
             size: request.PageRequest.PageSize,
             cancellationToken: cancellationToken);

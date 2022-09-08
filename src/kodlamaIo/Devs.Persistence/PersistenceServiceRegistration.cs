@@ -9,7 +9,8 @@ namespace Devs.Persistence;
 
 public static class PersistenceServiceRegistration
 {
-    public static IServiceCollection AddPersistenceServices(this IServiceCollection services, IConfiguration configuration)
+    public static IServiceCollection AddPersistenceServices(this IServiceCollection services,
+        IConfiguration configuration)
     {
         services.AddDbContext<BaseDbContext>(options =>
         {
@@ -20,6 +21,8 @@ public static class PersistenceServiceRegistration
         });
 
         services.AddScoped<ITechnologyRepository, TechnologyRepository>();
+        services.AddScoped<ILanguageRepository, LanguageRepository>();
+        services.AddScoped<IUserRepository, UserRepository>();
 
         return services;
     }

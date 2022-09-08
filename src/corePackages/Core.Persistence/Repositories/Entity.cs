@@ -3,8 +3,8 @@
 public abstract class Entity
 {
     public int Id { get; set; }
-    public DateTime CreatedTime { get; set; } = DateTime.UtcNow;
-    public DateTime UpdatedTime { get; set; }
+    public DateTime Created { get; set; } = DateTime.UtcNow;
+    public DateTime Updated { get; set; }
     
     public Entity() { }
 

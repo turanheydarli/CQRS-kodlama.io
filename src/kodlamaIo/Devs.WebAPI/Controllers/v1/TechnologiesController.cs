@@ -1,4 +1,5 @@
 ﻿using Core.Application.Requests;
+using Core.CrossCuttingConcerns.Exceptions;
 using Devs.Application.Features.Technologies.Commands.CreateTechnology;
 using Devs.Application.Features.Technologies.Commands.DeleteTechnology;
 using Devs.Application.Features.Technologies.Commands.UpdateTechnology;
@@ -15,9 +16,9 @@ public class TechnologiesController : BaseController
 {
     [Produces("application/json", "text/plain")]
     [ProducesResponseType(StatusCodes.Status200OK, Type = typeof(TechnologyListModel))]
-    //[ProducesResponseType(StatusCodes.Status400BadRequest, Type = typeof(BusinessProblemDetails))]
+    [ProducesResponseType(StatusCodes.Status400BadRequest, Type = typeof(BusinessProblemDetails))]
     [HttpGet]
-    public async Task<IActionResult> GetAllTechnologies([FromQuery] PageRequest pageRequest)
+    public async Task<IActionResult> GetListTechnology([FromQuery] PageRequest pageRequest)
     {
         GetListTechnologyQuery getListTechnologyQuery = new GetListTechnologyQuery { PageRequest = pageRequest };
 
@@ -28,7 +29,7 @@ public class TechnologiesController : BaseController
 
     [Produces("application/json", "text/plain")]
     [ProducesResponseType(StatusCodes.Status200OK, Type = typeof(TechnologyGetByIdDto))]
-    //[ProducesResponseType(StatusCodes.Status400BadRequest, Type = typeof(BusinessProblemDetails))]
+    [ProducesResponseType(StatusCodes.Status400BadRequest, Type = typeof(BusinessProblemDetails))]
     [HttpGet("{Id}")]
     public async Task<IActionResult> GetTechnologyById([FromRoute] GetByIdTechnologyQuery getByIdTechnologyQuery)
     {
@@ -40,7 +41,7 @@ public class TechnologiesController : BaseController
     [Consumes("application/json")]
     [Produces("application/json", "text/plain")]
     [ProducesResponseType(StatusCodes.Status200OK, Type = typeof(CreatedTechnologyDto))]
-    //[ProducesResponseType(StatusCodes.Status400BadRequest, Type = typeof(BusinessProblemDetails))]
+    [ProducesResponseType(StatusCodes.Status400BadRequest, Type = typeof(BusinessProblemDetails))]
     [HttpPost]
     public async Task<IActionResult> CreateTechnology([FromBody] CreateTechnologyCommand createTechnologyCommand)
     {
@@ -52,7 +53,7 @@ public class TechnologiesController : BaseController
     [Consumes("application/json")]
     [Produces("application/json", "text/plain")]
     [ProducesResponseType(StatusCodes.Status200OK, Type = typeof(UpdatedTechnologyDto))]
-    //[ProducesResponseType(StatusCodes.Status400BadRequest, Type = typeof(BusinessProblemDetails))]
+    [ProducesResponseType(StatusCodes.Status400BadRequest, Type = typeof(BusinessProblemDetails))]
     [HttpPut]
     public async Task<IActionResult> UpdateTechnology([FromBody] UpdateTechnologyCommand updateTechnologyCommand)
     {
@@ -62,8 +63,8 @@ public class TechnologiesController : BaseController
     }
 
     [Produces("application/json", "text/plain")]
-    [ProducesResponseType(StatusCodes.Status200OK, Type = typeof(UpdatedTechnologyDto))]
-    //[ProducesResponseType(StatusCodes.Status400BadRequest, Type = typeof(BusinessProblemDetails))]
+    [ProducesResponseType(StatusCodes.Status200OK)]
+    [ProducesResponseType(StatusCodes.Status400BadRequest, Type = typeof(BusinessProblemDetails))]
     [HttpDelete("{Id}")]
     public async Task<IActionResult> DeleteTechnology([FromRoute] DeleteTechnologyCommand deleteTechnologyCommand)
     {

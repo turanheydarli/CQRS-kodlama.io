@@ -27,7 +27,7 @@ public class UpdateTechnologyCommandHandler : IRequestHandler<UpdateTechnologyCo
         _technologyBusinessRules.TechnologyShouldExistWhenRequested(technology);
 
         technology.Name = request.Name;
-        technology.UpdatedTime = DateTime.UtcNow;
+        technology.Updated = DateTime.UtcNow;
 
         await _technologyRepository.UpdateAsync(technology);
 
