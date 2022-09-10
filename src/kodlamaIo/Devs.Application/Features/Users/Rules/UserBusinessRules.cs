@@ -19,9 +19,9 @@ public class UserBusinessRules
             if (result.Items.Any()) throw new BusinessException(UserMessages.EmailAlreadyExist);
         }
 
-        public async Task UserShouldExistWhenRequested(string email)
+        public async Task UserShouldExistWhenRequested(int userId)
         {
-            var result = await _userRepository.GetListAsync(b => b.Email == email);
+            var result = await _userRepository.GetListAsync(b => b.Id == userId);
             if (!result.Items.Any()) throw new BusinessException(UserMessages.UserNotFound);
         }
 }

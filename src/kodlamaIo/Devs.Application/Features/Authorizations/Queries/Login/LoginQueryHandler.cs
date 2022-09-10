@@ -26,10 +26,11 @@ public class LoginQueryHandler : IRequestHandler<LoginQuery, LoginedDto>
 
     public async Task<LoginedDto> Handle(LoginQuery request, CancellationToken cancellationToken)
     {
-        await _userBusinessRules.UserShouldExistWhenRequested(request.Email);
-
         AppUser user = await _userRepository.GetAsync(u => u.Email == request.Email && u.Status);
 
+        await _userBusinessRules.UserShouldExistWhenRequested(user.Id);
+
+        
         if (!HashingHelper.VerifyPasswordHash(request.Password, user.PasswordHash, user.PasswordSalt))
             throw new BusinessException(AuthorizationMessages.PasswordIsWrong);
 

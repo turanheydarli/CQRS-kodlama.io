@@ -22,9 +22,9 @@ public class UpdateUserCommandHandler : IRequestHandler<UpdateUserCommand, Updat
 
     public async Task<UpdatedUserDto> Handle(UpdateUserCommand request, CancellationToken cancellationToken)
     {
-        await _userBusinessRules.UserShouldExistWhenRequested(request.Email);
+        await _userBusinessRules.UserShouldExistWhenRequested(request.Id);
 
-        AppUser user = await _userRepository.GetAsync(u => u.Email == request.Email);
+        AppUser user = await _userRepository.GetAsync(u => u.Id == request.Id);
 
         user.GitHubUrl ??= request.GitHubUrl;
         user.FirstName ??= request.FirstName;

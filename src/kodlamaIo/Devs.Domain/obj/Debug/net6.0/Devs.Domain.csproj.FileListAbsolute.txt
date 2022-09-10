@@ -1,0 +1,17 @@
+C:\Users\LENOVO\RiderProjects\kodlama.io\src\kodlamaIo\Devs.Domain\bin\Debug\net6.0\Devs.Domain.deps.json
+C:\Users\LENOVO\RiderProjects\kodlama.io\src\kodlamaIo\Devs.Domain\bin\Debug\net6.0\Devs.Domain.dll
+C:\Users\LENOVO\RiderProjects\kodlama.io\src\kodlamaIo\Devs.Domain\bin\Debug\net6.0\Devs.Domain.pdb
+C:\Users\LENOVO\RiderProjects\kodlama.io\src\kodlamaIo\Devs.Domain\bin\Debug\net6.0\Core.Persistence.dll
+C:\Users\LENOVO\RiderProjects\kodlama.io\src\kodlamaIo\Devs.Domain\bin\Debug\net6.0\Core.Security.dll
+C:\Users\LENOVO\RiderProjects\kodlama.io\src\kodlamaIo\Devs.Domain\bin\Debug\net6.0\Core.Persistence.pdb
+C:\Users\LENOVO\RiderProjects\kodlama.io\src\kodlamaIo\Devs.Domain\bin\Debug\net6.0\Core.Security.pdb
+C:\Users\LENOVO\RiderProjects\kodlama.io\src\kodlamaIo\Devs.Domain\obj\Debug\net6.0\Devs.Domain.csproj.AssemblyReference.cache
+C:\Users\LENOVO\RiderProjects\kodlama.io\src\kodlamaIo\Devs.Domain\obj\Debug\net6.0\Devs.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\LENOVO\RiderProjects\kodlama.io\src\kodlamaIo\Devs.Domain\obj\Debug\net6.0\Devs.Domain.AssemblyInfoInputs.cache
+C:\Users\LENOVO\RiderProjects\kodlama.io\src\kodlamaIo\Devs.Domain\obj\Debug\net6.0\Devs.Domain.AssemblyInfo.cs
+C:\Users\LENOVO\RiderProjects\kodlama.io\src\kodlamaIo\Devs.Domain\obj\Debug\net6.0\Devs.Domain.csproj.CoreCompileInputs.cache
+C:\Users\LENOVO\RiderProjects\kodlama.io\src\kodlamaIo\Devs.Domain\obj\Debug\net6.0\Devs.Domain.csproj.CopyComplete
+C:\Users\LENOVO\RiderProjects\kodlama.io\src\kodlamaIo\Devs.Domain\obj\Debug\net6.0\Devs.Domain.dll
+C:\Users\LENOVO\RiderProjects\kodlama.io\src\kodlamaIo\Devs.Domain\obj\Debug\net6.0\refint\Devs.Domain.dll
+C:\Users\LENOVO\RiderProjects\kodlama.io\src\kodlamaIo\Devs.Domain\obj\Debug\net6.0\Devs.Domain.pdb
+C:\Users\LENOVO\RiderProjects\kodlama.io\src\kodlamaIo\Devs.Domain\obj\Debug\net6.0\ref\Devs.Domain.dll

@@ -13,3 +13,15 @@ C:\Users\info\source\repos\turanheydarli\KodlamaIoDevs\src\corePackages\Core.App
 C:\Users\info\source\repos\turanheydarli\KodlamaIoDevs\src\corePackages\Core.Application\bin\Debug\net6.0\FluentValidation.dll
 C:\Users\info\source\repos\turanheydarli\KodlamaIoDevs\src\corePackages\Core.Application\bin\Debug\net6.0\FluentValidation.xml
 C:\Users\info\source\repos\turanheydarli\KodlamaIoDevs\src\corePackages\Core.Application\obj\Debug\net6.0\Core.Application.csproj.CopyComplete
+C:\Users\LENOVO\RiderProjects\kodlama.io\src\corePackages\Core.Application\bin\Debug\net6.0\Core.Application.deps.json
+C:\Users\LENOVO\RiderProjects\kodlama.io\src\corePackages\Core.Application\bin\Debug\net6.0\Core.Application.dll
+C:\Users\LENOVO\RiderProjects\kodlama.io\src\corePackages\Core.Application\bin\Debug\net6.0\Core.Application.pdb
+C:\Users\LENOVO\RiderProjects\kodlama.io\src\corePackages\Core.Application\obj\Debug\net6.0\Core.Application.csproj.AssemblyReference.cache
+C:\Users\LENOVO\RiderProjects\kodlama.io\src\corePackages\Core.Application\obj\Debug\net6.0\Core.Application.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\LENOVO\RiderProjects\kodlama.io\src\corePackages\Core.Application\obj\Debug\net6.0\Core.Application.AssemblyInfoInputs.cache
+C:\Users\LENOVO\RiderProjects\kodlama.io\src\corePackages\Core.Application\obj\Debug\net6.0\Core.Application.AssemblyInfo.cs
+C:\Users\LENOVO\RiderProjects\kodlama.io\src\corePackages\Core.Application\obj\Debug\net6.0\Core.Application.csproj.CoreCompileInputs.cache
+C:\Users\LENOVO\RiderProjects\kodlama.io\src\corePackages\Core.Application\obj\Debug\net6.0\Core.Application.dll
+C:\Users\LENOVO\RiderProjects\kodlama.io\src\corePackages\Core.Application\obj\Debug\net6.0\refint\Core.Application.dll
+C:\Users\LENOVO\RiderProjects\kodlama.io\src\corePackages\Core.Application\obj\Debug\net6.0\Core.Application.pdb
+C:\Users\LENOVO\RiderProjects\kodlama.io\src\corePackages\Core.Application\obj\Debug\net6.0\ref\Core.Application.dll
