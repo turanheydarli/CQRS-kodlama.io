@@ -1,4 +1,5 @@
 ﻿using Core.CrossCuttingConcerns.Exceptions;
+using Core.Security.Extensions;
 using Devs.Application.Features.Users.Commands.UpdateUser;
 using Devs.Application.Features.Users.DTOs;
 using Microsoft.AspNetCore.Mvc;
@@ -15,6 +16,8 @@ public class UsersController : BaseController
     [HttpPut]
     public async Task<IActionResult> UpdateUser([FromBody] UpdateUserCommand updateUserCommand)
     {
+        updateUserCommand.Id = User.GetUserId();
+        
         UpdatedUserDto updatedUserDto = await Mediator.Send(updateUserCommand);
 
         return Ok(updatedUserDto);
