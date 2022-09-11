@@ -24,4 +24,10 @@ public class UserBusinessRules
             var result = await _userRepository.GetListAsync(b => b.Id == userId);
             if (!result.Items.Any()) throw new BusinessException(UserMessages.UserNotFound);
         }
+        
+        public async Task UserEmailShouldExistWhenRequested(string email)
+        {
+            var result = await _userRepository.GetListAsync(b => b.Email == email);
+            if (!result.Items.Any()) throw new BusinessException(UserMessages.UserNotFound);
+        }
 }

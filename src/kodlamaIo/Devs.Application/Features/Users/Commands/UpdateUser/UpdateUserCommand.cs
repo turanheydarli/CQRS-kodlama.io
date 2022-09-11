@@ -9,8 +9,7 @@ public class UpdateUserCommand : IRequest<UpdatedUserDto>,ISecuredRequest
     public int Id { get; set; }
     public string FirstName { get; set; }
     public string LastName { get; set; }
-    public string Email { get; set; }
     public string GitHubUrl { get; set; }
 
-    public string[] Roles => new[] { "User.Update", "Admin" };
+    public string[] Roles => new[] { "User.Update" };
 }

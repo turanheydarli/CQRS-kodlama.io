@@ -109,7 +109,7 @@ public class BaseDbContext : DbContext
         Language[] languageEntitySeed = { new(1, "C#"), new(2, "Java"), new(3, "JavaScript") };
         modelBuilder.Entity<Language>().HasData(languageEntitySeed);
 
-        Technology[] technologyEntitySeed = { new(1, 1, "WPF"), new(2, 1, "ASP.NET"), new(3, 2, "Spring"), new(4, 2, "Spring"), };
+        Technology[] technologyEntitySeed = { new(1, 1, "WPF"), new(2, 1, "ASP.NET"), new(3, 2, "JSP"), new(4, 2, "Spring"), };
         modelBuilder.Entity<Technology>().HasData(technologyEntitySeed);
     }
 }
